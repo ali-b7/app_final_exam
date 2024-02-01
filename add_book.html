@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Add a New Book</h1>
+    <form method="post">
+        Title: <input type="text" name="title"><br>
+        Author: <input type="text" name="author"><br>
+        Publication Year: <input type="number" name="publication_year"><br>
+        <input type="submit" value="Add Book">
+    </form>
+    <a href="{{ url_for('list_books') }}">Back to Book List</a>
+</body>
+</html>
